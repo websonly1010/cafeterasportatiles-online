@@ -11,7 +11,7 @@ DOMAIN = "cafeterasportatiles.online"
 
 def generate_post(title_prompt):
     resp = openai.ChatCompletion.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=[
             {"role":"system","content":"Eres un asistente que crea artículos de blog de formato Markdown, con título, subtítulos y texto."},
             {"role":"user","content": title_prompt}
